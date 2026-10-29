@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sw Projetados SLZ — site
 
-## Getting Started
+Landing page de geração de leads (Next.js 16 + Tailwind 4). Design System em [design-system/MASTER.md](design-system/MASTER.md).
 
-First, run the development server:
+## Rodar
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev      # http://localhost:3000
+npm run build && npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Copie `.env.example` para `.env.local` e preencha.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Onde editar
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| O quê | Arquivo |
+|---|---|
+| WhatsApp, mensagens, endereço, horários, redes, números, garantia, vídeos | `site.config.ts` |
+| Cards de ambientes | `content/environments.ts` |
+| Projetos do portfólio e galerias | `content/projects.ts` |
+| Reels | `content/reels.ts` |
+| FAQ | `content/faq.ts` |
+| Artigos do blog | `content/posts.ts` |
 
-## Learn More
+## Fotos
 
-To learn more about Next.js, take a look at the following resources:
+Ficam em `public/images` com o padrão `<ambiente><projeto>-<foto>.jpeg` (ex.: `cozinha2-3.jpeg`, `banheiro1-1.jpeg`).
+Para trocar uma foto, substitua o arquivo **mantendo o mesmo nome**. Proporção ideal: retrato 4:5.
+`banheiro1-*` e `area-externa1-*` são placeholders.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Rastreamento
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Eventos enviados para `dataLayer` / GA4 / Meta Pixel: `click_whatsapp` (com `cta_location`), `form_start`, `form_submit`, `scroll_75`, `video_play`.
+Scripts de rastreamento só carregam após o aceite no banner de cookies. UTMs, gclid e fbclid vão para a mensagem do WhatsApp ("Origem: …").
