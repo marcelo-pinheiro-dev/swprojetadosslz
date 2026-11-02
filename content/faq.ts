@@ -4,7 +4,7 @@ export const faq: { question: string; answer: string }[] = [
   {
     question: "Qual o prazo médio de entrega?",
     answer:
-      "Em média, até 45 dias após a aprovação do projeto 3D e a medição final. O prazo exato fica escrito no contrato e é acompanhado pela nossa equipe. Como fabricamos tudo na nossa fábrica, não dependemos de terceiros para cumpri-lo.",
+      "Em média, até 60 dias após a aprovação do projeto 3D e a medição final. Dependendo do tamanho e tipo do projeto, esse prazo pode variar. Como fabricamos tudo na nossa fábrica, não dependemos de terceiros para cumpri-lo.",
   },
   {
     question: "O projeto 3D tem custo?",

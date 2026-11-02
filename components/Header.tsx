@@ -45,6 +45,21 @@ export function Header() {
           : "border-b border-transparent bg-gradient-to-b bg-origin-border from-ink/80 to-transparent py-3"
       }`}
     >
+      <div
+        className="top-banner"
+        aria-hidden={scrolled}
+        style={{
+          overflow: "hidden",
+          transition: "max-height 0.4s ease, opacity 0.3s ease, padding-top 0.3s ease, padding-bottom 0.3s ease",
+          maxHeight: scrolled ? 0 : 48,
+          opacity: scrolled ? 0 : 1,
+          paddingTop: scrolled ? 0 : undefined,
+          paddingBottom: scrolled ? 0 : undefined,
+          pointerEvents: scrolled ? "none" : undefined,
+        }}
+      >
+        Cada centímetro do seu ambiente aproveitado ao máximo. Quer móveis que encaixam perfeitamente na sua casa? <strong>Solicite uma visita técnica gratuita e receba seu projeto personalizado!</strong>
+      </div>
       <a
         href="#conteudo"
         className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[60] focus:bg-gold focus:px-4 focus:py-2 focus:text-ink"

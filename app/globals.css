@@ -25,6 +25,33 @@
   --radius-xs: 2px;
 }
 
+/* ── Banner do topo ─────────────────────────────────────────── */
+.top-banner {
+  background-color: var(--color-surface-2);
+  border-bottom: 1px solid rgb(201 168 106 / 0.25);
+  color: var(--color-gold-light);
+  text-align: center;
+  padding: 0.45rem 1rem;
+  font-family: var(--font-sans);
+  font-size: 13.5px;
+  line-height: 1.35;
+  letter-spacing: 0.015em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.top-banner strong {
+  color: var(--color-cream);
+  font-weight: 600;
+}
+
+@media (min-width: 640px) {
+  .top-banner {
+    white-space: normal;
+    text-overflow: unset;
+  }
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
@@ -42,7 +69,7 @@
   }
 
   section[id] {
-    scroll-margin-top: 72px;
+    scroll-margin-top: 108px;
   }
 
   h1,

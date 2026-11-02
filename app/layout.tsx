@@ -34,7 +34,7 @@ const cinzel = Cinzel({
 
 const title = "Móveis Planejados de Alto Padrão em todo o estado do Maranhão | Sw Projetados SLZ";
 const description =
-  "Fábrica própria de móveis planejados em São Luís: cozinhas, salas, banheiros e áreas externas sob medida, com projeto 3D personalizado, corte de precisão e 3 anos de garantia.";
+  "Fábrica própria de móveis planejados em São Luís: cozinhas, salas, banheiros e áreas externas sob medida, com projeto 3D personalizado, corte de precisão e 1 ano de garantia.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),

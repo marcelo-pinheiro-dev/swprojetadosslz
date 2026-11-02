@@ -14,9 +14,9 @@ export const siteConfig = {
   },
 
   contact: {
-    whatsappNumber: "5598981567077",
-    phoneDisplay: "(98) 98156-7077",
-    phoneHref: "tel:+5598981567077",
+    whatsappNumber: "5598992235100",
+    phoneDisplay: "(98) 992235100",
+    phoneHref: "tel:+5598992235100",
     email: "swprojetados@gmail.com",
   },
 
@@ -58,7 +58,7 @@ export const siteConfig = {
       "Olá! Vim pelo site da Sw Projetados SLZ e quero agendar uma visita ao showroom para ver meu projeto em 3D.",
   },
 
-  guaranteeYears: 3,
+  guaranteeYears: 1,
 
 
   media: {
