@@ -1,0 +1,3 @@
+# Arquivos que não sobem no deploy via CLI (vercel --prod)
+.env*
+public/videos/video-hero-16x9.mp4

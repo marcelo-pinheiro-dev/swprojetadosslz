@@ -1,4 +1,4 @@
-import { siteConfig } from "@/site.config";
+import { guaranteeLabel } from "@/site.config";
 
 export const faq: { question: string; answer: string }[] = [
   {
@@ -23,7 +23,7 @@ export const faq: { question: string; answer: string }[] = [
   },
   {
     question: "Qual garantia vocês oferecem e o que ela cobre?",
-    answer: `Garantia de ${siteConfig.guaranteeYears} anos, por escrito, contra defeitos de fabricação e montagem, incluindo estrutura, ferragens e acabamentos, em condições normais de uso.`,
+    answer: `Garantia de ${guaranteeLabel}, por escrito, contra defeitos de fabricação e montagem, incluindo estrutura, ferragens e acabamentos, em condições normais de uso.`,
   },
   {
     question: "Quais ferragens e materiais vocês utilizam?",

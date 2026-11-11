@@ -1,4 +1,4 @@
-import { siteConfig } from "@/site.config";
+import { guaranteeLabel } from "@/site.config";
 import { CTAButton } from "../CTAButton";
 import { SectionHeader } from "../SectionTag";
 import { ClockIcon, CubeIcon, FactoryIcon, HingeIcon, PrecisionIcon, ShieldIcon } from "../icons";
@@ -22,7 +22,7 @@ const features = [
   {
     icon: ShieldIcon,
     title: "Garantia estendida",
-    text: `${siteConfig.guaranteeYears} anos de garantia, por escrito. A segurança de quem confia no próprio processo.`,
+    text: `${guaranteeLabel} de garantia, por escrito. A segurança de quem confia no próprio processo.`,
   },
   {
     icon: CubeIcon,

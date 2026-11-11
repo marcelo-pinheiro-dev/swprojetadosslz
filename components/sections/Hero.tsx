@@ -1,28 +1,18 @@
 import Image from "next/image";
 import { siteConfig } from "@/site.config";
 import { CTAButton } from "../CTAButton";
+import { HeroVideo } from "../HeroVideo";
 import { Seals } from "../Seals";
 import { SectionTag } from "../SectionTag";
 
 export function Hero() {
-  const { heroVideo, heroPoster } = siteConfig.media;
+  const { heroVideo, heroVideoMobile, heroPoster } = siteConfig.media;
 
   return (
     <section id="inicio" className="relative isolate flex min-h-[82svh] items-end overflow-hidden lg:items-center">
       <div className="absolute inset-0 -z-10" data-parallax="0.15">
         {heroVideo ? (
-          <video
-            className="h-full w-full object-cover"
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="metadata"
-            poster={heroPoster}
-            aria-hidden="true"
-          >
-            <source src={heroVideo} type="video/mp4" />
-          </video>
+          <HeroVideo src={heroVideo} mobileSrc={heroVideoMobile} poster={heroPoster} />
         ) : (
           <Image
             src={heroPoster}

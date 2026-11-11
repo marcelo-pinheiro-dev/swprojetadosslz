@@ -1,10 +1,10 @@
-import { siteConfig } from "@/site.config";
+import { guaranteeLabel } from "@/site.config";
 import { ClockIcon, CubeIcon, FactoryIcon, ShieldIcon } from "./icons";
 
 const seals = [
   { icon: FactoryIcon, label: "Fábrica própria" },
   { icon: CubeIcon, label: "Projeto 3D" },
-  { icon: ShieldIcon, label: `Garantia de ${siteConfig.guaranteeYears} anos` },
+  { icon: ShieldIcon, label: `Garantia de ${guaranteeLabel}` },
   { icon: ClockIcon, label: "Entrega no prazo" },
 ];
 

@@ -62,8 +62,10 @@ export const siteConfig = {
 
 
   media: {
-    heroVideo: null as string | null, // ex.: "/videos/hero.mp4"
-    heroPoster: "/images/cozinha1-1.jpeg",
+    // Gerados a partir de public/videos/video-hero-16x9.mp4 (1080p para desktop, 720p para celular).
+    heroVideo: "/videos/hero-1080.mp4" as string | null,
+    heroVideoMobile: "/videos/hero-720.mp4" as string | null,
+    heroPoster: "/images/hero-poster.jpg",
     institutionalVideo: null as string | null, // ex.: "/videos/fabrica.mp4"
     institutionalPoster: "/images/cozinha2-1.jpeg",
     institutionalCaptions: null as string | null, // ex.: "/videos/fabrica.vtt"
@@ -76,6 +78,9 @@ export const siteConfig = {
   },
 
 } as const;
+
+// "1 ano" / "3 anos" — use sempre este texto ao exibir o prazo de garantia.
+export const guaranteeLabel = `${siteConfig.guaranteeYears} ${siteConfig.guaranteeYears === 1 ? "ano" : "anos"}`;
 
 export const navItems = [
   { label: "Home", href: "/#inicio" },

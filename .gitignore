@@ -44,3 +44,6 @@ next-env.d.ts
 
 .vercel
 .env*
+
+# vídeo original (21 MB) — o site usa as versões otimizadas hero-1080.mp4 e hero-720.mp4
+public/videos/video-hero-16x9.mp4
